@@ -1,0 +1,270 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(244, 215, 168);
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  text-align: center;
+  padding: 0px;
+}
+
+/* Loading Screen Styles */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* Background color for the loading screen */
+  z-index: 9999;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+  animation: zoomIn 1.5s ease-out forwards; /* Apply the animation */
+}
+
+/* Keyframes for zooming in effect */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Other existing styles... */
+.intro {
+  margin: 20px auto; /* Center the paragraph with margin on both sides */
+  max-width: 930px; /* Optional: Limiting the width for better readability */
+}
+
+.intro-text {
+  font-size: 2.4rem;
+  font-family: cursive; /* Changing font to cursive */
+  padding: 0 20px;
+}
+
+.intro-we {
+  font-family: Fantasy;
+  font-size: 2.4rem;
+  margin-top: -10px;
+}
+
+.mycolor {
+  background-color: #d3d3d3; /* Cooler light grey background color */
+  color: #666; /* Light grey text color */
+  padding: 8.5rem; /* Adjust vertical padding as needed */
+}
+
+.mycolor p {
+  margin-top: 1rem; /* Example margin for the paragraph */
+}
+
+.parallax-container {
+  /* left: 20rem; */
+  position: relative;
+  height: 200px; /* Adjust as needed */
+  overflow: visible;
+  width: 100%; /* Full width container */
+}
+
+.parallax-image {
+  position: relative;
+  top: -36%; /* Adjust to position the image 50% above the container */
+  left: 1%;
+  transform: translateX(50%);
+  width: auto;
+  height: 60%; /* Adjust as needed */
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.section.odd {
+  flex-direction: row;
+}
+
+.section.even {
+  flex-direction: row-reverse;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.section-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.section-content1 img {
+  width: 59%; /* Adjusted to make the image smaller */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  transition: all 1.8s ease; /* Smooth transition over 1.8 seconds */
+}
+
+.section-content img {
+  width: 30%; /* Adjusted to make the image smaller */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  transition: all 1.8s ease; /* Smooth transition over 1.8 seconds */
+}
+
+.section-content1 img:hover {
+  cursor: pointer; /* Optional: Change cursor on hover */
+}
+
+.section-content img:hover {
+  cursor: pointer; /* Optional: Change cursor on hover */
+}
+
+.section-content1 p {
+  width: 90%; /* Adjusted width with margin */
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 5%; /* Adjusted padding */
+  margin: 0 auto; /* Centering the paragraph with margin */
+}
+
+.section-content p {
+  width: 90%; /* Adjusted width with margin */
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 5%; /* Adjusted padding */
+  margin: 0 auto; /* Centering the paragraph with margin */
+}
+
+.title-and-paragraph {
+  margin-top: -10rem;
+  width: 100%;
+}
+
+.cursive-title {
+  font-family: cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.image-container:hover .main-image:after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.image-number {
+  position: relative;
+  top: -354px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  font-size: 5rem; /* Adjust as needed */
+  color: #6d6653; /* Adjust color as needed */
+  font-family: 'Great Vibes', cursive; /* Using the imported font */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for transform and color */
+}
+
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Adding filter transition */
+}
+
+.main-image:hover {
+  transform: scale(1.1) rotate(0deg); /* Scale up by 10% and rotate slightly on hover */
+  filter: brightness(90%); /* Reduce brightness to 90% on hover */
+}
+
+.main-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Overlay background color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.main-image:hover:after {
+  opacity: 1; /* Show overlay on hover */
+}

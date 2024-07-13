@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #d3d3d3; /* Cooler light grey background color */
+  color: #666; /* Light grey text color */
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  color: gray;
+}

@@ -1,0 +1,19 @@
+.hero {
+    height: 100vh;
+    background: url('./my.jpeg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(244, 215, 168);
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+  }
+  
