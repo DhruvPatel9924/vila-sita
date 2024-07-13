@@ -92,11 +92,6 @@ body {
   max-width: 930px; /* Optional: Limiting the width for better readability */
 }
 
-.intro-text {
-  font-size: 2.4rem;
-  font-family: cursive; /* Changing font to cursive */
-  padding: 0 20px;
-}
 
 .intro-we {
   font-family: Fantasy;

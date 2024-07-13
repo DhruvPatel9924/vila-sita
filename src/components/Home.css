@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -16,10 +16,31 @@ body {
   max-width: 930px; /* Optional: Limiting the width for better readability */
 }
 
+.hero-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.hero-text {
+  width: 50%;
+}
+
 .intro-text {
-  font-size: 2.4rem;
-  font-family: cursive; /* Changing font to cursive */
-  padding: 0 20px;
+  font-size: 1.7rem;
+  font-family: cursive;
+  /* padding: 0 10px; */
+}
+
+.hero-image {
+  width: 70%;
+  padding-left: 0px;
+}
+
+.intro-image {
+  height: fit-content;
+  width: 70%;
 }
 
 .intro-we {
@@ -32,6 +53,9 @@ body {
   background-color: #d3d3d3; /* Cooler light grey background color */
   color: #666; /* Light grey text color */
   padding: 8.5rem; /* Adjust vertical padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mycolor p {
@@ -86,16 +110,16 @@ body {
   margin-right: 15rem;
 }
 .section-content1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    margin-left: 15rem;
-    margin-right: 15rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
 
-.section-content1 img  {
+.section-content1 img {
   width: 59%; /* Adjusted to make the image smaller */
   height: auto;
   border-radius: 10px; /* Rounded corners for a softer look */
@@ -103,26 +127,26 @@ body {
 }
 
 .section-content img {
-    width: 30%; /* Adjusted to make the image smaller */
-    height: auto;
-    border-radius: 10px; /* Rounded corners for a softer look */
-    transition: all 1.8s ease; /* Smooth transition over 1.8 seconds */
-  }
+  width: 30%; /* Adjusted to make the image smaller */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  transition: all 1.8s ease; /* Smooth transition over 1.8 seconds */
+}
 
-  .section-content1 img:hover {
-    cursor: pointer; /* Optional: Change cursor on hover */
-  }
+.section-content1 img:hover {
+  cursor: pointer; /* Optional: Change cursor on hover */
+}
 .section-content img:hover {
   cursor: pointer; /* Optional: Change cursor on hover */
 }
 
 .section-content1 p {
-    width: 90%; /* Adjusted width with margin */
-    font-size: 1rem;
-    text-align: left;
-    padding: 0 5%; /* Adjusted padding */
-    margin: 0 auto; /* Centering the paragraph with margin */
-  }
+  width: 90%; /* Adjusted width with margin */
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 5%; /* Adjusted padding */
+  margin: 0 auto; /* Centering the paragraph with margin */
+}
 .section-content p {
   width: 90%; /* Adjusted width with margin */
   font-size: 1rem;
@@ -132,7 +156,7 @@ body {
 }
 
 .title-and-paragraph {
-    margin-top: -10rem;
+  margin-top: -10rem;
   width: 100%;
 }
 
@@ -143,45 +167,44 @@ body {
 }
 
 .image-container {
-    size: 20rem;
+  size: 20rem;
   position: relative;
   display: inline-block;
 }
 
-
 .main-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Adding filter transition */
-  }
-  
-  .main-image:hover {
-    transform: scale(1.1) rotate(0deg); /* Scale up by 10% and rotate slightly on hover */
-    filter: brightness(100%); /* Reduce brightness to 90% on hover */
-  }
-  
-  .main-image:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2); /* Overlay background color */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth opacity transition */
-  }
-  
-  .main-image:hover:after {
-    opacity: 1; /* Show overlay on hover */
-  }
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Adding filter transition */
+}
+
+.main-image:hover {
+  transform: scale(1.1) rotate(0deg); /* Scale up by 10% and rotate slightly on hover */
+  filter: brightness(100%); /* Reduce brightness to 90% on hover */
+}
+
+.main-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Overlay background color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.main-image:hover:after {
+  opacity: 1; /* Show overlay on hover */
+}
 
 .image-number {
-    position: relative;
-    top: -23.5rem; /* Adjust as needed */
-    left: 1rem; /* Adjust as needed */
-    font-size: 5rem; /* Adjust as needed */
-    color: #6d6653; /* Adjust color as needed */
-    font-family: 'Great Vibes', cursive; /* Using the imported font */
-  }
+  position: relative;
+  top: -23.5rem; /* Adjust as needed */
+  left: 1rem; /* Adjust as needed */
+  font-size: 5rem; /* Adjust as needed */
+  color: #6d6653; /* Adjust color as needed */
+  font-family: "Great Vibes", cursive; /* Using the imported font */
+}
